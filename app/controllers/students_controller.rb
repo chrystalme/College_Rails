@@ -13,6 +13,7 @@ class StudentsController < ApplicationController
       flash[:success] = "Registration succeeded!"
       redirect_to root_path
     else
+      # flash.now[:error] = ""
       render :new
     end
   end
